@@ -1,0 +1,5 @@
+.button {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    padding: 0.4rem 0.8rem;
+}

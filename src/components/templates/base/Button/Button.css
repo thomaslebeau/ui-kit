@@ -1,0 +1,13 @@
+.button {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+}
+
+.button--small {
+    font-size: 1.2rem; 
+    padding: 0.4rem 0.8rem; 
+}
+
+.button--primary { background: var(--primary-color); }

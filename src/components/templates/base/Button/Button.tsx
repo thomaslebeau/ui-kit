@@ -1,15 +1,11 @@
 import React from 'react';
-import './button.css';
+import './Button.css';
 
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
   primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
   /**
    * How large should the button be?
    */
@@ -30,16 +26,14 @@ interface ButtonProps {
 export const Button = ({
   primary = false,
   size = 'medium',
-  backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? 'button--primary' : 'button--secondary';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      className={['button', `button--${size}`, mode].join(' ')}
       {...props}
     >
       {label}
